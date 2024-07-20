@@ -1,0 +1,87 @@
+<!-- to create hower and shadow  when place a cursor on the click button-->
+<style> /* to give the style*/
+  .Suscribe-b { 
+    background-color: #9aac0d; 
+     
+    color:white;
+    border: none;
+    padding-left: 16px;/* spaceing inside the box */
+   padding-top: 10px;
+   padding-right: 16px;
+   padding-bottom: 10px;
+    border-radius: 2px;
+    cursor:pointer;
+    margin-right: 8px;/* margen is used to give space b/n the box*/
+    transition: opacity 0.15s; /* to change the color smoothly . it takes the 
+    2 val. 1) what to change & 2)how long */
+  }
+   
+
+  .Suscribe-b:hover  {  
+opacity: 0.7; /* it take the value from 0-1 */
+
+  }
+  .Suscribe-b:active  {
+    opacity:0.5 ;
+  }
+
+    .join-b{
+      background-color: rgb(255, 255, 255); 
+    
+    color:rgb(4, 202, 242);
+   padding-left: 10px;/* spaceing inside the box */
+   padding-top: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+
+   border-color: rgb(18, 157, 249);
+   border-style:solid;
+   border-width: 1px;
+    cursor:pointer;
+    border-radius: 2px;
+        margin-right: 8px;
+        transition: background-color 0.15s, color 0.15s;
+        
+    }
+
+    .join-b:hover{
+      background-color: rgb(0, 106, 205);
+      color:white;
+    }
+    .join-b:active{
+      opacity: 0.7;
+    }
+
+
+
+    .tw-b{
+      background-color: #47132f; 
+    
+    color:rgb(232, 236, 237); 
+   
+    height: 30px;
+    width: 74px;
+   border: none;
+    font-weight: bold ;
+    font-size: 14px;
+    cursor:pointer;
+    border-radius: 200px;
+    transition: box-shadow 0.15s , color 0.15s;
+    }
+
+
+.tw-b:hover{
+  box-shadow:5px 5px 10px #00000026 ;/* it takes 4 values  1. horizontal  2. vertical 3. blurr*/
+}
+</style> <!--class is a attribute-->
+
+<button class="Suscribe-b">
+  SUBSCRIBE
+</button> 
+
+<button class="join-b">JOIN my channel</button>
+
+<button class="tw-b">Tweet</button>
+
+<!-- note:
+vertical-align: top;to allign the top of the box-->

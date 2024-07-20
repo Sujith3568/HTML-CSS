@@ -1,0 +1,224 @@
+extra:
+<!--there are 3 types of the elements in html 
+1->block-> take entire line horizontally
+2->inline-block -> take only as much space required -> used for vertical
+3-> inline ->use <strong></strong> 
+
+
+---------------------------------------------------------------------------------------------------------------
+*note:
+->we can adjust the font size and text
+->If we want to design only the perticular word or text use the<span class=" span-ex"> example</span>
+->paragraph take default block but img-> take in-line , to change-> css-> display : block;or in-line block;
+-> difference b/n grid & flex
+	the layout->  fixed | not fixed
+-> how much section we want to create -> create that much <div>
+-> to target input element in the class ->eg: .search-bar::palceholder{ //statements}
+->z-index:1 -> the greater the z-index that section had the more priority	
+
+to link the css-> <link rel = "stylesheet" href="style.css">
+-> it should the done inside the head
+HTML does not take or give the dynamic input and output.
+for output we use the JSP or JS etc.
+alt + shift + down key to print the selected text downwords
+-----------------------------------------------------------------------------------------------------------------
+HTML:
+
+a -> achor tag used to  link to next website 
+href -> to link the next page 
+target ->  decide whether the web site should open in same page or in new page
+Note: target->_blank indicate new page 
+Syntax: <a href="link" target="_blank"></a>
+The extra  spaces are ignored in html.. even in the p tag also
+<img src=" image path" alter=" error message">
+
+------------------------------------------------------------------------------------------------------------------
+CSS:
+
+class->syntax: class="classname"->eg class="button" -> to access-> .button { //designs; } are used for class
+to id use  eg: #label{//styles}
+subscribe-button.hover->used to change the color when curser is placed in button 
+subscribe-button.active-> used during clicking
+div -> basically a box or it is container ->can contain any other element -> by default it is a block element
+inline css-> writeing a css inside the html->eg:<div style="backgroung color:light blur;" > //statements </div>
+the same class name can be repeated many times but id cannot
+-----------------------------------------------------------------------------------------------------------------------
+Nested layout:
+->2 types of layout-> vertical -> horizontal layout
+nested layout technique-> layout inside layout -> & is combination of vertical & horizontal
+
+------------------------------------------------------------------------------------------------------------------------
+Grid:
+
+-> is a layout consisting of horizontal and vertical boxes.->1by2 grid-> 1row,2column
+->helps to make horizontal line perfect without any space b/n
+->syntex you can use class also inside the div instead of style basic-> <div style=" display: grid; gris-templet-column : 100px 100px // how wid and no.of columns we want">
+-> should be created on the container.
+-> in grid 1fr-> free space(fr)->1 means the ratio like out of remaining space how much this should take if there are more fr's
+-> image to take the certain area in the grid box use-> width:100%;
+colom-gap-> to give the space b/n colom
+row-gap-> to give the space between rows used in grid
+
+------------------------------------------------------------------------------------------------------------------
+
+Flexbox:
+
+->syntex you can use class also inside the div instead of style basic-> <div style=" display: flex; flex-direction : row ">
+-> the elenemts inside the flexbox are treated as inline elements
+->to acquire entire remaining space use-> flex:1; 
+justify content: start or end or centre ;-> to start from begining
+justify content: space-between; ->provide equal space b/n the boxes
+align-items: stretch or start or end or centre;
+-> flex can very its length while decreasing size to do so use->  flex:1; -> if u want to keep it constant width and does not want to shrink use flex-shrink:0; & width:50px;
+->max-width:300px -> above which the size does not increase 
+-> the search bar default has some width to change that and make search bar to shrink use width:0;
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+CSS position:
+-> helps to keep the top(header) and side constant when we scroll up
+->syntax->position:static;//default ->position:fixed;
+->top:10px;-> indicate position of header from top of the browser tab 
+->bottom:100px:-> the elements stretches towards down leaving 100px from bottom
+->left:50px;-> from left 50px space -> right:50px;-> from right of the page
+-> we can use height & width also
+
+------------------------------------------------------------------------------------------------------------------------
+
+position absolute:
+->position : absolute; will move as we scrole the web page where as position :fixed; does not
+-> when position absolute  is inside the position fixed the its left,right,top etc are based on the position fixed & not on the page
+-> it is also used to place the one image on another image
+->when position absolute  is inside the position:relative the its left,right,top etc are based on the position relative & not on the page
+and it move along with the position relative page move
+
+----------------------------------------------------------------------------------------------------------------------
+
+responsive design:
+media query-> to make the content of the page  small as we move the page small
+syntax:-> @media (max-width:600px) {
+css class grid{
+grid-templet-column:1fr 1fr; } } 
+
+@media (min-width:1000px{//statement}
+@media (min-width:599px) and (max-width:999px){ // statements}
+
+extra: inheritence:
+			 css specificity
+-------------------------------------------------------------------------------------------------------------
+
+CSS shortcuts:
+
+use padding:4px 10px;//4px-vertical 10px- horizontal 
+ padding:4px 10px 20px 30px ; -> instead of paddig-left->right->bottom-> top;
+-> can apply same for margin also
+-> border:1px solid light green;-> instead of width, style,color
+-------------------------------------------------------------------------------------------------------------
+
+
+New html & CSS:
+
+HTML:
+ to create the order list use  tag-> <ol> </ol> & for unordered use <ul style ='lsit-style-type: none;'> </ul> 
+ for discription list <dl> <dt> text </dt> <dd> discription </dd> </dl>
+<ol type="a">// to change the type from numbering to test "a" 
+<li> item 1 </li> // list 
+<li> item 1 </li> 
+<li> item 1 </li>
+</ol>
+
+Forms:
+ to identify the unique element use the id= tag inside the input tag and it should be typed in the label tag-> for=" " 
+
+ eg:-> details.html 
+------------------------------------------------------------------------------------------------------------------------
+
+CSS:
+
+1) CSS fonts:
+by default the text iis in serif fonts-> different size in the text,
+ sans sarifs fonts-> have the same size of the text -> areal is a type of it 
+ font-family: Arieal,San sarfis,havlita; -> means if areal is not available then use san sarfis if it is not then use havlita
+ note:-> can use google fonts for more fonts
+
+
+2) CSS color:
+rgb(190,234,19)-> red-green-blue each can take value from 0-255  or 
+hex code eg: #ffa53d -> 2 for red(ff)-(a5) for green- (3d)for blue -> each take vale from 0-9,a-f(or 0-f)
+if all are f i.e-> #ffffff -> get pure white color
+-> to change color -> color:#ffa53d; 
+
+3) Basic CSS selectors:
+is nothing but create the <div> tag and use the class to target the perticular
+ul>li>a ->shortcut to create list
+if i want to select the my-artical of section-> in CSS-> section.my-artical 
+universal selector-> *{ color:blue}-> make all the text in the html to blue color
+eg:-> header p{color:red}-> the paragraph inside the header only will become red
+-> header p->called distangent selector->the space b/n header and p indicate inside the header select or target paragraph
+h2+p{//design}-> select the paragraph that come after the h2 only -> called urgent tag
+section.my-head > h2{//design} -> select only the h2 that come after class my-head inside the section
+
+
+4) id and class:
+id -> more used to to add the event of js
+utility class-> the class that have some fixed color or text that we known in advance 
+ instead of writeing many time we can call it anywhere
+one utility class is used to perform only task
+eg: .text-red{color: red;}
+<div class="text-red bg-color">  // it take the two utility class 1->test-red & 2->bg-color
+
+5) CSS atribute selector:
+attribute is nothing but the <a href =""> -> here href is the attribute of the a tag
+syntax: input[type="text"]{//design} -> to ulter the color of the attribute type 
+want to chnage the collor of all the link attribute that has name google a[href *="google" ]{//design}
+
+6)Specificity:
+-> specificity increase order -> inline style > id selector > class selector > element selector
+
+7) Boredr:
+ {border: 4px solid green} -> {border: width style color}
+
+8) Box Model:
+-> every element has  box in html 
+-> nothing but use the padding 
+
+9)Margin Collapsing:
+provideing marrgin -> box which has highest margin it will be displayed b/n two 
+
+10) block and inline elements :
+block level-> they take the entire line -> <p>,<h1>,div,ul,ol etc ->start from new  ->heigth and width change if we use height & width tag
+inline level-> they took length only they require -> img,span, a, textarea -> they are in the same line-> remains same
+-> inline element have only margin left and right -> not four side
+-> to convert block line element to inline element use display: inline property and vicevrsa
+-> if we want inline element and also features of block line -> display:inline-block;
+
+11)img tag:
+-> we can add padding margin etc as we can do with block line elements
+
+12) Box sizeing:
+-> use box-size: border-box; -> does not change the size of the border
+
+13)psudo class with link:
+->hover eg a:hover{ color:green;} //syntax of psudo class
+->link a:link{color:black;}
+->active->visited ->same syntax
+
+14)Psudo class with input:
+input:focus{//design;}
+-> similar as link just use input instead of link
+
+15)psudo childs:
+p:first-child{} //first child with tag color change
+p:first-of-type{}
+p:last-child{}
+p:list-of-type{}
+
+---------------------------------------------------------------------------------------------------------------------------------
+Note:
+home key-> to go to the statring of the line  
+end key-> end of the line
+
+in CSS ^ -> indicate start with  $ -> end with
+to reset the CSS use *{ //desing}
+p:-> for psudo class & p:: -> psudo elements 
+#container>ul.my-songs -> + enter 

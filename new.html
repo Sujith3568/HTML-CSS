@@ -1,0 +1,53 @@
+<!--there are 3 types of the elements in html 
+1->block-> take entire line horizontally
+2->inline-block -> take only as much space required -> used for vertical
+3-> inline ->use <strong></strong> 
+
+note-> paragraph take default block but img-> take in-line , to change-> css-> display : block;or in-line block;
+div -> basically a box or it is container ->can contain any other element -> by default it is a block element
+2 types of layout-> vertical -> horizontal layout
+nested layout technique-> layout inside layout -> & is combination of vertical & horizontal
+
+select the text then -> alt + shift + down key to print the selected text downwords
+  --> 
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>Scem Employee Portal | Homepage</title>
+  </head>
+  <body>
+    <p>Welcome to Scem Employee Portal</p>
+    <!-- form is used to take and send the input to any language
+    action decide where to send the data 
+      method decide which type  it is either get details or post details-->
+    <form action="saveEmployee" 
+        method="POST">
+  <!-- input take the input
+   name -> send the dymanic data to the perticular variable declaired in java .
+   type-> define which type it is either text or password or email
+   required -> the form will submit only when required data are given-->
+      <input type="text"
+           placeholder="Enter Your Name"
+           name="empName"
+           required/>
+      <br/>
+      
+      <input type="date"
+           placeholder="Enter Your DOB"
+           name="empDob"/>
+      <br/>
+      
+      <input type="text"
+           placeholder="Enter Department"
+           name="empDept"/>
+      <br/>
+    
+      <input type="submit"/>  <!-- to submit the details-->
+    </form>	
+  </body>
+  </html>
+
+  
